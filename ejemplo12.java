@@ -31,7 +31,7 @@ public class ejemplo12 {
         
         if((word1.substring(0,1).equalsIgnoreCase("x"))&& 
                 (word1.endsWith("o"))&& (wordSize == 5)){
-            counter = counter +1;
+            counter = counter + 1;
         }else{
             counter1 = counter1 +1;
         }
