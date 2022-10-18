@@ -23,7 +23,9 @@ public class ejemplo6 {
         System.out.println("Ingrese un numero para determinar si es par o impar");
         number = reader.nextInt();
         
-        if(number%2 == 0){
+        if (number == 0){
+            System.out.println("Indefinido");
+        }else if(number%2 == 0){
                 System.out.println("El numero " + number + " es par");
         }else{
             System.out.println("El numero " + number + "  es impar");
