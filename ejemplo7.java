@@ -21,10 +21,10 @@ public class ejemplo7 {
         System.out.println("Ingrese la palabra secreta");
         String word1 = reader.next();
         
-        if (word1.equals("eureka")){
-            System.out.println("Correcto");
-        }else{
+        if (!word1.equals("eureka")&&!word1.equals("EUREKA")){
             System.out.println("Incorrecto");
+        }else{
+            System.out.println("Correcto");
         }
     }
     

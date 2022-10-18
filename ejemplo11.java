@@ -80,6 +80,7 @@ public class ejemplo11 {
                 break;
             default:
                 System.out.println("Su numero es diferente a las opciones");
+
     }
             }catch(InputMismatchException e){
                 System.out.println("Debes introducir un numero");
@@ -90,3 +91,4 @@ public class ejemplo11 {
     
 }
 }
+
