@@ -9,23 +9,28 @@ import java.util.Scanner;
  *
  * @author pc
  */
-public class ejemplo7 {
+public class javaIntro_6 {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        int number = 0;
+        
         Scanner reader = new Scanner(System.in);
         
-        System.out.println("Ingrese la palabra secreta");
-        String word1 = reader.next();
+        System.out.println("Ingrese un numero para determinar si es par o impar");
+        number = reader.nextInt();
         
-        if (!word1.equals("eureka")&&!word1.equals("EUREKA")){
-            System.out.println("Incorrecto");
+        if (number == 0){
+            System.out.println("Indefinido");
+        }else if(number%2 == 0){
+                System.out.println("El numero " + number + " es par");
         }else{
-            System.out.println("Correcto");
+            System.out.println("El numero " + number + "  es impar");
         }
+      
     }
     
 }

@@ -9,7 +9,7 @@ import java.util.Scanner;
  *
  * @author pc
  */
-public class ejemplo12 {
+public class javaIntro_12 {
     public static void main (String[] args){    
         
         

@@ -9,7 +9,7 @@ import java.util.Scanner;
  *
  * @author pc
  */
-public class ejemplo14 {
+public class javaIntro_14 {
     
     public static void main(String[] args){
     Scanner reader = new Scanner(System.in);

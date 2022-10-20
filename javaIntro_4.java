@@ -11,20 +11,25 @@ import java.util.Scanner;
  *
  * @author pc
  */
-public class ejemplo2 {
+public class javaIntro_4{
 
     /**
-     * @paramthe command line arguments
+     * @param args the command line arguments
      */
     public static void main(String[] args) {
         // TODO code application logic here
-       
+        int celsius = 0;
         
         Scanner reader = new Scanner(System.in);
         
-        System.out.println("Ingresa tu nombre");
-        String name = reader.next();
-        System.out.println("Tu nombre es" + " " + name);
+        System.out.println("Introduce los grados celsius a convertir a farenheit");
+        celsius = reader.nextInt();
+        
+        float farenheit = 32 + (9*celsius / 5);
+        
+        System.out.println("Los grados celsius ingresados son" + " " + celsius + " En farenheit son " + farenheit);
+        
+        
     }
     
 }

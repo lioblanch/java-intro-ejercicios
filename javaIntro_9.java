@@ -9,28 +9,24 @@ import java.util.Scanner;
  *
  * @author pc
  */
-public class ejemplo10 {
+public class javaIntro_9 {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        int limit = 0;
-        int number1 = 0;
-        int counter = 0;
         Scanner reader = new Scanner(System.in);
         
-        System.out.println("Ingrese un limite");
-        limit = reader.nextInt();
+        System.out.println("Ingrese una palabra que inicie con la letra A");
+        String word1 = reader.next();
         
-        do {
-            System.out.println("Ingrese valores a sumar");
-            number1 = reader.nextInt();  
-            counter = number1 + counter;
-        }while(counter<= limit);
-        
-        System.out.println("Supero su limite");
+   
+        if ((word1.substring(0,1).equals("a") ) ||(word1.substring(0,1).equals("A"))){
+            System.out.println("Correcto");
+        }else{
+            System.out.println("Incorrecto");
+        }
     }
     
 }

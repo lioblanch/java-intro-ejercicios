@@ -4,33 +4,28 @@
  * and open the template in the editor.
  */
 package exercise1;
+
 import java.util.Scanner;
 /**
  *
  * @author pc
  */
-public class ejemplo6 {
+public class javaIntro_3{
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        int number = 0;
-        
         Scanner reader = new Scanner(System.in);
         
-        System.out.println("Ingrese un numero para determinar si es par o impar");
-        number = reader.nextInt();
+        System.out.println("Ingrese una frase");
+        String phrase = reader.nextLine();
         
-        if (number == 0){
-            System.out.println("Indefinido");
-        }else if(number%2 == 0){
-                System.out.println("El numero " + number + " es par");
-        }else{
-            System.out.println("El numero " + number + "  es impar");
-        }
-      
+        System.out.println(phrase);
+        
+        System.out.println(phrase.toUpperCase());
+        System.out.println(phrase.toLowerCase());
     }
     
 }
