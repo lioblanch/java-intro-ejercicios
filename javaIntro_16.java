@@ -4,12 +4,13 @@
  * and open the template in the editor.
  */
 package exercise1;
-import java.util.Scanner;
+import java.util.*;
 /**
  *
  * @author pc
  */
 public class javaIntro_16 {
+    
    public static void main (String[] args){
    
        Scanner reader = new Scanner(System.in);
@@ -21,17 +22,7 @@ public class javaIntro_16 {
        int [] vector1 = new int [vectorTam];
        
        randomly(vector1);
-       System.out.println("Ingrese un valor a buscar en el arreglo");
-       int value = reader.nextInt();
-       
-       for (j = 0; j< vector1.length; j++){
-       
-          if (value == vector1[j]){
-              counter++; 
-          } 
-         
-       }
-        System.out.println("EL valor " + value + " aparece " + counter +" veces en el arreglo");
+       buscador(vector1);
    }
 
 
@@ -52,6 +43,23 @@ public static void randomly (int[] x){
          
 }
 
+public static void buscador(int[] y){
+    
+    int counter = 0;
+    Scanner reader = new Scanner(System.in);
+System.out.println("Ingrese un valor a buscar en el arreglo");
+       int value = reader.nextInt();
+       
+       for (int j = 0; j< y.length; j++){
+       
+          if (value == y[j]){
+              counter++; 
+          } 
+         
+       }
+        System.out.println("EL valor " + value + " aparece " + counter +" veces en el arreglo");
+
+}
 
 }
 
